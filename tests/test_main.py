@@ -1,18 +1,14 @@
-import pytest
-from httpx import AsyncClient
-from fastapi import status
-from ..src import main
+from fastapi.testclient import TestClient
+from src.pkg.main import app
+
+client = TestClient(app)
 
 
-@pytest.mark.asyncio
-async def test_root_status_code():
-    async with AsyncClient(app=app, base_url="http://test") as ac:
-        response = await ac.get("/")
-    assert response.status_code == status.HTTP_200_OK
+def test_root_status_code():
+    response = client.get("/")
+    assert response.status_code == 200
 
 
-@pytest.mark.asyncio
-async def test_root_response_content():
-    async with AsyncClient(app=app, base_url="http://test") as ac:
-        response = await ac.get("/")
+def test_root_response_content():
+    response = client.get("/")
     assert response.json() == {"message": "Hello World"}
