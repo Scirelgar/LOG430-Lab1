@@ -1,22 +1,19 @@
-@startuml
+@startuml Use Cases
 
-title Cas d'utilisation du système de caisse
+title Diagramme des cas d'utilisation du système de caisse
+left to right direction
+skinparam backgroundColor transparent
+actor Employe as "Employé"
 
-actor "Client" as client
-
-rectangle "Caisse" as caisse {
-usecase "1. Chercher un produit" as search
-usecase "2. Consulter état d'un produit" as check_stock
-usecase "3. Enregistrer vente" as register_sale
-usecase "4. Annuler vente" as cancel_sale
+rectangle "Système de Caisse" {
+    usecase "Effectuer un retour" as CU4 <<CU4>>
+    usecase "Enregistrer une vente" as CU3 <<CU3>>
+    usecase "Consulter l’état du stock" as CU2 <<CU2>>
+    usecase "Rechercher un produit" as CU1 <<CU1>>
 }
 
-client -left-> caisse
-
-note bottom of caisse
-    Les cas d'utilisation sont numérotés en ordre d'implémentation.
-    Le cas d'utilisation "Chercher un produit" est le premier à 
-    être implémenté puisque les autres cas d'utilisation en dépendent.
-end note
-        
+Employe --> CU1
+Employe --> CU2
+Employe --> CU3
+Employe --> CU4
 @enduml
