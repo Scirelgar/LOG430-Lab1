@@ -18,7 +18,7 @@ Il est possible d'émuler du multi-threading avec divers librairies Python et il
 
 ## Object Relational Mapper : SQL Alchemy ou SQL Model
 
-SQL Alchemy est généralement assez répandu en Python. Cependant, comme l'application sera éventuellement portée à du Web, et que la technologie FastAPI risque d'être utilisée, c'est plutôt un ORM basé sur SQL Alchemy qui devrait être utilisé appelé (SQL Model)[https://fastapi.tiangolo.com/tutorial/sql-databases/]
+SQL Alchemy est généralement assez répandu en Python. Cependant, comme l'application sera éventuellement portée à du Web, et que la technologie FastAPI risque d'être utilisée, c'est plutôt un ORM basé sur SQL Alchemy qui devrait être utilisé appelé [SQL Model](https://fastapi.tiangolo.com/tutorial/sql-databases/)
 
 ## Database : PostgreSQL
 
