@@ -23,4 +23,4 @@ class TestRegistry:
     def test_cannot_instantiate_registry(self):
         # Verify Registry cannot be instantiated directly
         with pytest.raises(TypeError):
-            Registry()
+            Registry()  # type: ignore
