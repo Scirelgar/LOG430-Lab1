@@ -1,9 +1,9 @@
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy import Integer, Float, ForeignKey, DateTime, String
 from datetime import datetime
-from model.declarative_base import Base
-from model.product import Product
-from model.sale_model import Sale
+from src.model.declarative_base import Base
+from src.model.product import Product
+from src.model.sale_model import Sale
 
 
 class Return(Base):

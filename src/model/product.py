@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy import String, Integer, Float
-from model.declarative_base import Base
+from src.model.declarative_base import Base
 
 
 class Product(Base):

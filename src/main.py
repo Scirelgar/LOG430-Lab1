@@ -1,13 +1,20 @@
+import sys
+import os
+
+# Add the project root directory to Python path
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-from model.product import Base, Product
-from model.sale_model import Sale, SaleLine
-from model.return_model import Return, ReturnLine
-from repository.product_repository import ProductRepository
-from repository.sale_repository import SaleRepository
-from repository.return_repository import ReturnRepository
-from controller.controller import Controller
+from src.model.declarative_base import Base
+from src.model.product import Product
+from src.model.sale_model import Sale, SaleLine
+from src.model.return_model import Return, ReturnLine
+from src.repository.product_repository import ProductRepository
+from src.repository.sale_repository import SaleRepository
+from src.repository.return_repository import ReturnRepository
+from src.controller.controller import Controller
 
 
 class Menu:
