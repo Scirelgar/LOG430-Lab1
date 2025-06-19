@@ -1,8 +1,3 @@
-import os
-import sys
-# Add the project root to the path
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
 import pytest
 from datetime import datetime
 from src.model.return_model import Return, ReturnLine
