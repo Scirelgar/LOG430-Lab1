@@ -1,8 +1,8 @@
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy import Integer, Float, ForeignKey, DateTime
 from datetime import datetime
-from model.declarative_base import Base
-from model.product import Product
+from src.model.declarative_base import Base
+from src.model.product import Product
 
 
 class Sale(Base):

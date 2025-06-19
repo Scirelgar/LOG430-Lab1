@@ -2,7 +2,7 @@ from collections.abc import Sequence
 from sqlalchemy import select
 from .repository import Registry
 from sqlalchemy.orm import Session
-from model.product import Product
+from src.model.product import Product
 
 
 class ProductRepository(Registry):

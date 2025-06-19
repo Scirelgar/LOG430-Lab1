@@ -2,7 +2,7 @@ from collections.abc import Sequence
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 from .repository import Registry
-from model.return_model import Return, ReturnLine
+from src.model.return_model import Return, ReturnLine
 
 
 class ReturnRepository(Registry):

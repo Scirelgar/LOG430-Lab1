@@ -1,11 +1,11 @@
 from typing import Optional, List
-from model.product import Product
-from model.sale_model import Sale, SaleLine
-from model.return_model import Return, ReturnLine
-from repository.product_repository import ProductRepository
-from repository.sale_repository import SaleRepository
-from repository.return_repository import ReturnRepository
-from model.cart_item import CartItem
+from src.model.product import Product
+from src.model.sale_model import Sale, SaleLine
+from src.model.return_model import Return, ReturnLine
+from src.repository.product_repository import ProductRepository
+from src.repository.sale_repository import SaleRepository
+from src.repository.return_repository import ReturnRepository
+from src.model.cart_item import CartItem
 from datetime import datetime
 
 

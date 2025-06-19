@@ -2,7 +2,7 @@ from collections.abc import Sequence
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 from .repository import Registry
-from model.sale_model import Sale, SaleLine
+from src.model.sale_model import Sale, SaleLine
 
 
 class SaleRepository(Registry):
